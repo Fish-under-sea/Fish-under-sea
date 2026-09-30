@@ -73,7 +73,6 @@
 
 | 项目 | 状态 | 语言 | 最近提交 | 说明 |
 |------|:----:|------|---------|------|
-| [DSH](https://github.com/Fish-under-sea/DSH) | 🟢 活跃 | JavaScript | 2026-09-30 | 私有仓库：DSH 配置同步方案（白名单搬运 + 单一 `.gitignore`） |
 | [dsh-fish](https://github.com/Fish-under-sea/dsh-fish) | 🟢 活跃 | JavaScript | 2026-09-29 | DSH 插件聚合包，仍在持续加插件 |
 | [ego-link-ux-prototype](https://github.com/Fish-under-sea/ego-link-ux-prototype) | 🟢 活跃 | JavaScript | 2026-09-28 | AI 交互原型课程工程，按周增量提交 |
 | [WinTunerPro](https://github.com/Fish-under-sea/WinTunerPro) | ⏸️ 暂停维护 | TypeScript | 2026-06-24 | 功能已到 v0.2.2，等待实际用户反馈再排下一轮 |
