@@ -1,0 +1,11 @@
+# 系统与编辑器杂项
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# 本地临时文件
+*.log
+*.tmp
