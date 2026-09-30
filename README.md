@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/banner.svg" alt="Fish-under-sea · 独立开发者 · AI Agent / 桌面工具 / DSH 插件生态" width="100%">
+<img src="./assets/banner.jpg" alt="Fish-under-sea · 独立开发者 · AI Agent / 桌面工具 / DSH 插件生态" width="100%">
 
 </div>
 
@@ -95,4 +95,4 @@
 - **Issue**：任何仓库都欢迎直接开 Issue，我会看（暂停维护的项目也看，只是不一定改）。
 - **PR**：欢迎，尤其欢迎 DSH 插件与桌面工具方向的补丁。
 
-<sub>本主页 Banner 为仓库内自托管 SVG（`assets/banner.svg`），不依赖外部图床，明暗两种主题下均可读。徽章使用 shields.io 静态徽章；若徽章未加载，页面内容与链接不受影响。</sub>
+<sub>本主页 Banner 为仓库内自托管图片（`assets/banner.jpg`），不依赖外部图床，明暗两种主题下均可读。徽章使用 shields.io 静态徽章；若徽章未加载，页面内容与链接不受影响。</sub>
