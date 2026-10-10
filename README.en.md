@@ -78,6 +78,8 @@ Status convention: as of 2026-09-30, **🟢 Active** means a commit within the l
 | Project | Status | Language | Last commit | Notes |
 |---------|:------:|----------|-------------|-------|
 | [dsh-fish](https://github.com/Fish-under-sea/dsh-fish) | 🟢 Active | JavaScript | 2026-09-29 | DSH plugin bundle; still adding plugins |
+| [dsh-agent-teams-fish](https://github.com/Fish-under-sea/dsh-agent-teams-fish) | 🟢 Active | TypeScript | 2026-10-08 | DSH multi-agent team collaboration plugin (a supplement to upstream), shipping vendor avatars and badges in the package |
+| [dsh-better-reasoning-effort-fish](https://github.com/Fish-under-sea/dsh-better-reasoning-effort-fish) | 🟢 Active | TypeScript | 2026-10-07 | DSH plugin: edit third-party models' reasoning effort and input modality right on the official Models page |
 | [ego-link-ux-prototype](https://github.com/Fish-under-sea/ego-link-ux-prototype) | 🟢 Active | JavaScript | 2026-09-28 | AI interaction prototyping coursework, committed weekly |
 | [WinTunerPro](https://github.com/Fish-under-sea/WinTunerPro) | ⏸️ Paused | TypeScript | 2026-06-24 | Feature-complete at v0.2.2; next round waits on real user feedback |
 | [MnemoTranscode](https://github.com/Fish-under-sea/MnemoTranscode) | ⏸️ Paused | Python | 2026-05-21 | Skill-festival entry; iteration froze after the event |

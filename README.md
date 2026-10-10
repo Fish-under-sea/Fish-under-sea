@@ -78,6 +78,8 @@
 | 项目 | 状态 | 语言 | 最近提交 | 说明 |
 |------|:----:|------|---------|------|
 | [dsh-fish](https://github.com/Fish-under-sea/dsh-fish) | 🟢 活跃 | JavaScript | 2026-09-29 | DSH 插件聚合包，仍在持续加插件 |
+| [dsh-agent-teams-fish](https://github.com/Fish-under-sea/dsh-agent-teams-fish) | 🟢 活跃 | TypeScript | 2026-10-08 | DSH 多智能体团队协作插件（上游补充版），随包自带厂商头像与徽标 |
+| [dsh-better-reasoning-effort-fish](https://github.com/Fish-under-sea/dsh-better-reasoning-effort-fish) | 🟢 活跃 | TypeScript | 2026-10-07 | DSH 插件：把第三方模型的思考强度与输入模态直接改在官方「模型」页 |
 | [ego-link-ux-prototype](https://github.com/Fish-under-sea/ego-link-ux-prototype) | 🟢 活跃 | JavaScript | 2026-09-28 | AI 交互原型课程工程，按周增量提交 |
 | [WinTunerPro](https://github.com/Fish-under-sea/WinTunerPro) | ⏸️ 暂停维护 | TypeScript | 2026-06-24 | 功能已到 v0.2.2，等待实际用户反馈再排下一轮 |
 | [MnemoTranscode](https://github.com/Fish-under-sea/MnemoTranscode) | ⏸️ 暂停维护 | Python | 2026-05-21 | 技能节参赛作品，赛事结束后冻结迭代 |
