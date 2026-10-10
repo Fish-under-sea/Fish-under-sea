@@ -1,0 +1,68 @@
+name: Generate profile metrics
+
+on:
+  schedule:
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/metrics.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-artifacts
+  cancel-in-progress: false
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - name: Check statistics secret
+        shell: bash
+        env:
+          HAS_METRICS_TOKEN: ${{ secrets.METRICS_TOKEN != '' }}
+        run: |
+          if [ "$HAS_METRICS_TOKEN" != "true" ]; then
+            echo "::error::Configure the METRICS_TOKEN repository secret first. See docs/profile-setup.md. Existing images are kept."
+            exit 1
+          fi
+
+      - name: Generate activity and repository statistics
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # latest stable
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: ${{ github.repository_owner }}
+          filename: metrics.left.svg
+          committer_branch: output
+          base: header, activity, community, repositories, metadata
+          repositories_affiliations: owner
+          repositories_forks: no
+          config_timezone: Asia/Shanghai
+          config_animations: no
+          config_padding: 16, 12
+
+      - name: Generate languages and isometric calendar
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # latest stable
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: ${{ github.repository_owner }}
+          filename: metrics.right.svg
+          committer_branch: output
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          repositories_affiliations: owner
+          repositories_forks: no
+          config_timezone: Asia/Shanghai
+          config_animations: no
+          config_padding: 16, 12
