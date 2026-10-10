@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="180" viewBox="0 0 680 180" role="img" aria-labelledby="title">
+  <title id="title">Hello hello. Fish-under-sea.</title>
+  <style>
+    text { fill: #747333; font-family: Inconsolata, Consolas, monospace; font-size: 52px; font-weight: 500; }
+    @media (prefers-color-scheme: dark) { text { fill: #cbc689; } }
+  </style>
+  <text x="340" y="68" text-anchor="middle">Hello hello</text>
+  <text x="340" y="142" text-anchor="middle">Fish-under-sea</text>
+</svg>

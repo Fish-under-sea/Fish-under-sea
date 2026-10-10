@@ -1,0 +1,71 @@
+{
+  "assets": [
+    {
+      "path": "assets/profile.jpg",
+      "kind": "image",
+      "channel": "user-provided",
+      "size": 150563,
+      "license": "用户提供素材；原始授权未声明，不纳入仓库 MIT 许可",
+      "createdAt": "2026-10-10T14:20:13.490Z",
+      "contentHash": "sha256:b17b86830ab24a04f17fdaec2171680f72fb435ae67eb694411afe4b66a217c8",
+      "sourceHash": "sha256:cdaed5a49d62a97f3c0fcd751274f6f8cb57b16eed6c143502db4b5c3fde8bd4",
+      "width": 1200,
+      "height": 750
+    },
+    {
+      "path": "https://raw.githubusercontent.com/innng/innng/master/assets/kyubey.gif",
+      "kind": "image",
+      "channel": "external-reference",
+      "size": 17927,
+      "license": "上游未声明素材授权；仅引用原地址，不声明为本仓库 MIT 作品",
+      "createdAt": "2026-10-10T14:20:13.490Z",
+      "contentHash": "sha256:547b2ffb97fd0e77c7bfe5682c771adcf56becc00ae930d952e1eae5e4dfad0d",
+      "width": 391,
+      "height": 200,
+      "frames": 6,
+      "source": "https://github.com/innng/innng"
+    },
+    {
+      "path": "assets/kyubey-still.png",
+      "kind": "image",
+      "channel": "code",
+      "size": 2737,
+      "license": "原 GIF 的静态回退；第三方素材原始授权未声明，不纳入仓库 MIT 许可",
+      "createdAt": "2026-10-10T14:20:13.490Z",
+      "contentHash": "sha256:e1bb62f4c72618d3203b76ba79e8792839d495937f587475d1af851eac6e9966",
+      "source": "https://raw.githubusercontent.com/innng/innng/master/assets/kyubey.gif",
+      "width": 391,
+      "height": 200
+    },
+    {
+      "path": "assets/title-static.svg",
+      "kind": "image",
+      "channel": "code",
+      "size": 570,
+      "license": "MIT",
+      "createdAt": "2026-10-10T14:20:13.490Z",
+      "contentHash": "sha256:04604ead3e777e5447bd653f924dba58702e75cfd12afeab5518b8820d5b55c2"
+    },
+    {
+      "path": "assets/title-compact-static.svg",
+      "kind": "image",
+      "channel": "code",
+      "size": 516,
+      "license": "MIT",
+      "createdAt": "2026-10-10T14:20:13.490Z",
+      "contentHash": "sha256:186769023756728651bcdc4a6f54b3ab9f7e88e7a941d13b8aaca50166053796"
+    },
+    {
+      "path": "assets/contributions-still.png",
+      "kind": "image",
+      "channel": "code",
+      "size": 4037,
+      "license": "MIT，Platane/snk 生成；贡献记录来自 Fish-under-sea 的公开资料",
+      "createdAt": "2026-10-10T14:54:11.391Z",
+      "contentHash": "sha256:f2299c6c6a1a93c810c001356252ab846fcfb5f3f73d961de5f5babe7d5d1449",
+      "source": "https://github.com/Platane/snk",
+      "width": 880,
+      "height": 192
+    }
+  ]
+}
