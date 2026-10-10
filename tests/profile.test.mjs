@@ -68,9 +68,24 @@ test('减少动态效果的贡献回退不依赖统计首次生成', () => {
   assert.ok(existsSync(join(root, 'assets/contributions-still.png')));
 });
 
-test('人物图在中英文主页中预留一致的 8:5 显示尺寸', () => {
+test('首屏人物图与标题并排且不重叠', () => {
   for (const profile of profiles) {
-    assert.match(read(profile), /<img src="\.\/assets\/profile\.jpg" width="320" height="200"/);
+    const content = read(profile);
+    const image = content.match(/<img src="\.\/assets\/profile\.jpg" width="(\d+)%" align="right"/);
+    assert.ok(image, '人物图应使用百分比宽度并靠右浮动，与参考案例一致');
+    const imagePct = Number(image[1]);
+    assert.ok(imagePct >= 20 && imagePct <= 30, `人物图 ${imagePct}% 应落在参考案例的 25% 附近`);
+
+    const title = content.match(/readme-typing-svg[\s\S]*?width="(\d+)%" alt="Hello hello/);
+    assert.ok(title, '需要桌面标题的展示宽度');
+    const titlePct = Number(title[1]);
+
+    // GitHub 给右浮动图片加 20px 左内边距；按最窄正文栏 632px 计算剩余可用宽度
+    const narrowArticle = 632;
+    const reserved = (imagePct / 100) * narrowArticle + 20;
+    const titleWidth = (titlePct / 100) * narrowArticle;
+    assert.ok(titleWidth <= narrowArticle - reserved, `标题 ${titlePct}% 放不进剩余 ${Math.round(narrowArticle - reserved)}px，会被挤到图片下方`);
+    assert.doesNotMatch(content, /<table>\s*<tr>\s*<td[^>]*>\s*<picture>/, '首屏不应使用带边框的表格分栏');
   }
 });
 

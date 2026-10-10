@@ -1,13 +1,13 @@
 <div align="center">
 
-<img src="./assets/profile.jpg" width="320" height="200" align="right" alt="Fish-under-sea's profile artwork" />
+<img src="./assets/profile.jpg" width="25%" align="right" alt="Fish-under-sea's profile artwork" />
 <picture>
   <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./assets/title-compact-static.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/title-static.svg" />
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Inconsolata&amp;weight=500&amp;size=52&amp;duration=4000&amp;pause=1200&amp;color=CBC689&amp;center=true&amp;vCenter=true&amp;multiline=true&amp;repeat=true&amp;random=false&amp;width=680&amp;height=180&amp;lines=Hello+hello;Fish-under-sea" />
   <source media="(max-width: 600px)" srcset="https://readme-typing-svg.demolab.com?font=Inconsolata&amp;weight=500&amp;size=52&amp;duration=4000&amp;pause=1200&amp;color=747333&amp;center=true&amp;vCenter=true&amp;multiline=true&amp;repeat=true&amp;random=false&amp;width=680&amp;height=180&amp;lines=Hello+hello;Fish-under-sea" />
   <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Inconsolata&amp;weight=500&amp;size=50&amp;duration=4000&amp;pause=1200&amp;color=CBC689&amp;center=true&amp;vCenter=true&amp;multiline=true&amp;repeat=true&amp;random=false&amp;width=1300&amp;height=140&amp;lines=Hello+hello;I%27m+Fish-under-sea%2C+a+personal+developer" />
-  <img src="https://readme-typing-svg.demolab.com?font=Inconsolata&amp;weight=500&amp;size=50&amp;duration=4000&amp;pause=1200&amp;color=747333&amp;center=true&amp;vCenter=true&amp;multiline=true&amp;repeat=true&amp;random=false&amp;width=1300&amp;height=140&amp;lines=Hello+hello;I%27m+Fish-under-sea%2C+a+personal+developer" width="65%" alt="Hello hello. I'm Fish-under-sea, a personal developer." />
+  <img src="https://readme-typing-svg.demolab.com?font=Inconsolata&amp;weight=500&amp;size=50&amp;duration=4000&amp;pause=1200&amp;color=747333&amp;center=true&amp;vCenter=true&amp;multiline=true&amp;repeat=true&amp;random=false&amp;width=1300&amp;height=140&amp;lines=Hello+hello;I%27m+Fish-under-sea%2C+a+personal+developer" width="70%" alt="Hello hello. I'm Fish-under-sea, a personal developer." />
 </picture>
 <br><br>
 <pre>
