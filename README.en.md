@@ -64,8 +64,8 @@ Three things occupy most of my time:
 
 | Project | In one line | Language | Star |
 |---------|-------------|----------|:----:|
-| **[WinTunerPro](https://github.com/Fish-under-sea/WinTunerPro)** | A Windows desktop optimization tool for gaming companion providers and small studios, folding the whole "reinstall + optimize + beautify" workflow into one foolproof app | TypeScript · Electron | 3 |
-| **[KouriChat](https://github.com/Fish-under-sea/KouriChat)** | A reworked build of KouriChat that adds the new `wxautox4` dependency, making the WeChat AI companion easier to get running | Python | 4 |
+| **[WinTunerPro](https://github.com/Fish-under-sea/WinTunerPro)** | A Windows desktop optimization tool for gaming companion providers and small studios, folding the whole "reinstall + optimize + beautify" workflow into one foolproof app | TypeScript · Electron | 4 |
+| **[KouriChat](https://github.com/Fish-under-sea/KouriChat)** | A reworked build of KouriChat that adds the new `wxautox4` dependency, making the WeChat AI companion easier to get running | Python | 5 |
 | **[MnemoTranscode](https://github.com/Fish-under-sea/MnemoTranscode)** | A "biological hard drive → digital hard drive" memory transcoder: extract chat history, structure it, feed it to a large model | Python · React · FastAPI | 2 |
 | **[Cursor-IDE-zh-hans](https://github.com/Fish-under-sea/Cursor-IDE-zh-hans)** | A fully adapted Simplified Chinese language pack for Cursor, built on Microsoft's `vscode-loc` community project | Python | 3 |
 | **[AgriSense](https://github.com/Fish-under-sea/AgriSense)** | A Raspberry Pi based AI smart greenhouse monitoring system: multi-sensor acquisition plus computer vision for full crop-cycle management | HTML · Python | 1 |
@@ -73,14 +73,14 @@ Three things occupy most of my time:
 
 ## 📊 Project status overview
 
-Status convention: as of 2026-09-30, **🟢 Active** means a commit within the last 2 months, **⏸️ Paused** means 2–6 months without a commit, and **🗄️ Completed** means more than 6 months without a commit (coursework kept for reference).
+Status convention: **🟢 Active** means substantive commits within the last 2 months, **⏸️ Paused** means 2–6 months without a commit, and **🗄️ Completed** means more than 6 months without a commit (coursework kept for reference). The "Last commit" column shows the date of the last **substantive change**, excluding documentation-only maintenance commits.
 
 | Project | Status | Language | Last commit | Notes |
 |---------|:------:|----------|-------------|-------|
-| [dsh-fish](https://github.com/Fish-under-sea/dsh-fish) | 🟢 Active | JavaScript | 2026-09-29 | DSH plugin bundle; still adding plugins |
-| [dsh-agent-teams-fish](https://github.com/Fish-under-sea/dsh-agent-teams-fish) | 🟢 Active | TypeScript | 2026-10-08 | DSH multi-agent team collaboration plugin (a supplement to upstream), shipping vendor avatars and badges in the package |
-| [dsh-better-reasoning-effort-fish](https://github.com/Fish-under-sea/dsh-better-reasoning-effort-fish) | 🟢 Active | TypeScript | 2026-10-07 | DSH plugin: edit third-party models' reasoning effort and input modality right on the official Models page |
-| [ego-link-ux-prototype](https://github.com/Fish-under-sea/ego-link-ux-prototype) | 🟢 Active | JavaScript | 2026-09-28 | AI interaction prototyping coursework, committed weekly |
+| [dsh-fish](https://github.com/Fish-under-sea/dsh-fish) | 🟢 Active | JavaScript | 2026-10-10 | DSH plugin bundle — one package installs all seven self-built plugins; still adding plugins |
+| [dsh-agent-teams-fish](https://github.com/Fish-under-sea/dsh-agent-teams-fish) | 🟢 Active | JavaScript | 2026-10-08 | DSH multi-agent team collaboration plugin (a supplement to upstream `NanmiCoder/dsh-agent-teams`), shipping 15 vendors × 10 roles of character art and vendor badges in the package |
+| [dsh-better-reasoning-effort-fish](https://github.com/Fish-under-sea/dsh-better-reasoning-effort-fish) | 🟢 Active | TypeScript | 2026-10-07 | DSH plugin (fork of upstream `HaoyueQin/dsh-better-reasoning-effort`): edit third-party models' reasoning effort and input modality right on the official Models page |
+| [ego-link-ux-prototype](https://github.com/Fish-under-sea/ego-link-ux-prototype) | 🟢 Active | JavaScript | 2026-09-30 | AI interaction prototyping coursework, committed weekly |
 | [WinTunerPro](https://github.com/Fish-under-sea/WinTunerPro) | ⏸️ Paused | TypeScript | 2026-06-24 | Feature-complete at v0.2.2; next round waits on real user feedback |
 | [MnemoTranscode](https://github.com/Fish-under-sea/MnemoTranscode) | ⏸️ Paused | Python | 2026-05-21 | Skill-festival entry; iteration froze after the event |
 | [skill-festival-submissions](https://github.com/Fish-under-sea/skill-festival-submissions) | ⏸️ Paused | TypeScript | 2026-05-14 | Fork of an upstream submission repository, kept for the record |
@@ -88,12 +88,16 @@ Status convention: as of 2026-09-30, **🟢 Active** means a commit within the l
 | [AgriSense](https://github.com/Fish-under-sea/AgriSense) | ⏸️ Paused | HTML | 2026-04-22 | Course project finished; resumes when hardware is available |
 | [Cursor-IDE-zh-hans](https://github.com/Fish-under-sea/Cursor-IDE-zh-hans) | ⏸️ Paused | Python | 2026-04-14 | Waiting on upstream `vscode-loc` translation updates |
 | [cursor-ai-monitor](https://github.com/Fish-under-sea/cursor-ai-monitor) | ⏸️ Paused | TypeScript | 2026-04-13 | VS Code extension prototype; the idea was validated and parked |
-| [live2d-widget](https://github.com/Fish-under-sea/live2d-widget) | ⏸️ Paused | JavaScript | 2026-04-13 | A copy of upstream `stevenjoezhang/live2d-widget`, following upstream |
+| [live2d-widget](https://github.com/Fish-under-sea/live2d-widget) | ⏸️ Paused | JavaScript | 2026-04-13 | A copy of upstream `stevenjoezhang/live2d-widget`, kept for the record — refer to upstream |
 | [KouriChat](https://github.com/Fish-under-sea/KouriChat) | ⏸️ Paused | Python | 2026-03-25 | Stable since the rework; will follow a major `wxautox4` upstream release |
-| [Campus-Text-Sentiment-Classification-System](https://github.com/Fish-under-sea/Campus-Text-Sentiment-Classification-System) | 🗄️ Completed | Python | 2025-12-24 | Course final project (autumn 2025), course finished |
-| [Movie-Review-Sentiment-Analysis-System](https://github.com/Fish-under-sea/Movie-Review-Sentiment-Analysis-System) | 🗄️ Completed | Python | 2025-12-24 | Course final project (autumn 2025), course finished |
+| [Campus-Text-Sentiment-Classification-System](https://github.com/Fish-under-sea/Campus-Text-Sentiment-Classification-System) | 🗄️ Completed | Python | 2025-12-24 | Course final project (autumn 2025), course finished; repository archived |
+| [Movie-Review-Sentiment-Analysis-System](https://github.com/Fish-under-sea/Movie-Review-Sentiment-Analysis-System) | 🗄️ Completed | Python | 2025-12-24 | Course final project (autumn 2025), course finished; repository archived |
 
-> Status changes with every commit; this table is maintained by hand and was last reviewed on 2026-09-30.
+> Status changes with every commit; this table is maintained by hand and was last reviewed on 2026-10-10.
+>
+> There is also [`dsh-agent-teams`](https://github.com/Fish-under-sea/dsh-agent-teams) — a fork of upstream [`NanmiCoder/dsh-agent-teams`](https://github.com/NanmiCoder/dsh-agent-teams) used only to open a Pull Request against upstream. It is not maintained on its own, so it is not listed above.
+>
+> Every repository (including private ones not listed above) is visible in the [repository list](https://github.com/Fish-under-sea?tab=repositories).
 
 ## 📮 Get in touch
 
