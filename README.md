@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/profile.jpg" width="25%" align="right" alt="Fish-under-sea 的个人主页配图" />
+<img src="./assets/profile.jpg?v=4db2e1b" width="25%" align="right" alt="Fish-under-sea 的个人主页配图" />
 <picture>
   <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./assets/title-compact-static.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/title-static.svg" />

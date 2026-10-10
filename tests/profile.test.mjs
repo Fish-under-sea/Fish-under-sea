@@ -71,9 +71,9 @@ test('减少动态效果的贡献回退不依赖统计首次生成', () => {
 test('首屏人物图与标题并排且不重叠', () => {
   for (const profile of profiles) {
     const content = read(profile);
-    const image = content.match(/<img src="\.\/assets\/profile\.jpg" width="(\d+)%" align="right"/);
+    const image = content.match(/<img src="\.\/assets\/profile\.jpg(\?v=[0-9a-f]+)?" width="(\d+)%" align="right"/);
     assert.ok(image, '人物图应使用百分比宽度并靠右浮动，与参考案例一致');
-    const imagePct = Number(image[1]);
+    const imagePct = Number(image[2]);
     assert.ok(imagePct >= 20 && imagePct <= 30, `人物图 ${imagePct}% 应落在参考案例的 25% 附近`);
 
     // 人物图为竖图（比例 < 1），浮动高度足以覆盖标题、简介、小狐狸与徽章
