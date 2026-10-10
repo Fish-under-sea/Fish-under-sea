@@ -33,16 +33,33 @@ These are currently unsupported as GitHub does not support them (yet?) for
 GraphQL API authentication. Use a classic token instead.
 ```
 
-**修正此前的判断：** 我先前依据 GitHub 放开了 fine-grained 令牌认证 GraphQL，判断该组合「理论上可行、只是官方未背书」。实测证明这是错的——Metrics 自身按令牌格式主动拒绝，与 GitHub 侧是否支持无关，其 [issue #1292](https://github.com/lowlighter/metrics/issues/1292) 仍为 open。必须改用 classic 无 scope 令牌，工作流无需改动。
+**修正此前的判断：** 我先前依据 GitHub 放开了 fine-grained 令牌认证 GraphQL，判断该组合「理论上可行、只是官方未背书」。实测证明这是错的——Metrics 自身按令牌格式主动拒绝，与 GitHub 侧是否支持无关，其 [issue #1292](https://github.com/lowlighter/metrics/issues/1292) 仍为 open。
 
-## 尚未验证
+改用 classic 无 scope 令牌后，手动运行 `Generate profile metrics`（run 38063366077）成功，两个统计步骤均通过。工作流本身无需修改。
 
-双栏统计尚未成功生成。需要在 `METRICS_TOKEN` 中换成 classic 令牌并重跑 `Generate profile metrics`；在此之前，线上主页的统计区域是缺失图片，离线预览中标注为占位。
+## 线上最终验证
 
-统计图首次成功生成后，还需确认其实际渲染尺寸与加载时的布局偏移。设计检测器提示外部响应式图片缺少固定高度：统计图高度随真实数据变化，GitHub README 不支持通用响应式 CSS。本轮没有用猜测的高度拉伸图表，也不宣称检测器全绿。
+`output` 分支四份产物全部生成并可访问：
+
+| 产物 | 大小 | 状态 |
+|------|------|------|
+| `github-contribution-grid-snake.svg` | 34,844 字节 | 200 |
+| `github-contribution-grid-snake-dark.svg` | 34,844 字节 | 200 |
+| `metrics.left.svg` | 71,173 字节 | 200 |
+| `metrics.right.svg` | 170,601 字节 | 200 |
+
+使用真实浏览器打开 `github.com/Fish-under-sea` 验证：
+
+- 桌面明暗主题与 375 像素手机端，8 张图片全部加载成功，破图 0，页面级横向溢出 0。
+- 首屏包含打字标题、浅灰等宽简介、小狐狸 GIF、用户人物图与紧凑徽章。
+- 贡献贪吃蛇渲染宽度 846 像素；统计图实测自然尺寸 480 × 335 与 480 × 388，均按容器自适应。
+- 页面文本已无学校、年级与班级信息。
+- 贡献动画使用 CSS `@keyframes`（51 个关键帧、3 条 animation 声明），不是静态图。
+
+## 剩余说明
+
+统计图高度随真实数据变化，设计检测器提示外部响应式图片缺少固定高度。GitHub README 不支持通用响应式 CSS，本轮没有用猜测的高度拉伸图表，也不宣称检测器全绿；实测加载时无页面级横向溢出。
 
 检测器的双换行和中点排版提示属于用户明确要求保留的参考样式，没有改成另一种设计。
 
-## 发布前操作
-
-在 GitHub 仓库设置中配置只读取公开资料的 `METRICS_TOKEN` Secret。用户确认当前预览后，再提交、推送并运行两类工作流。具体权限与操作见 [主页生成配置](profile-setup.md)。令牌不得发到聊天中。
+两个工作流每天北京时间 08:00 与 08:30 自动运行。统计令牌设置了过期时间时，到期后需要重新创建并更新 `METRICS_TOKEN`。
