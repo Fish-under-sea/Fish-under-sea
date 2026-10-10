@@ -76,6 +76,11 @@ test('首屏人物图与标题并排且不重叠', () => {
     const imagePct = Number(image[1]);
     assert.ok(imagePct >= 20 && imagePct <= 30, `人物图 ${imagePct}% 应落在参考案例的 25% 附近`);
 
+    // 人物图为竖图（比例 < 1），浮动高度足以覆盖标题、简介、小狐狸与徽章
+    const manifest = JSON.parse(read('assets/manifest.json'));
+    const entry = manifest.assets.find(a => a.path === 'assets/profile.jpg');
+    assert.ok(entry && entry.width < entry.height, '人物图应为竖图，使浮动覆盖整个首屏左栏');
+
     const title = content.match(/readme-typing-svg[\s\S]*?width="(\d+)%" alt="Hello hello/);
     assert.ok(title, '需要桌面标题的展示宽度');
     const titlePct = Number(title[1]);

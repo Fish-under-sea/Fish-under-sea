@@ -4,13 +4,14 @@
       "path": "assets/profile.jpg",
       "kind": "image",
       "channel": "user-provided",
-      "size": 150563,
+      "size": 121317,
       "license": "用户提供素材；原始授权未声明，不纳入仓库 MIT 许可",
-      "createdAt": "2026-10-10T14:20:13.490Z",
-      "contentHash": "sha256:b17b86830ab24a04f17fdaec2171680f72fb435ae67eb694411afe4b66a217c8",
-      "sourceHash": "sha256:cdaed5a49d62a97f3c0fcd751274f6f8cb57b16eed6c143502db4b5c3fde8bd4",
-      "width": 1200,
-      "height": 750
+      "createdAt": "2026-10-10T18:03:56.018Z",
+      "contentHash": "sha256:7ad2a779d4763a8ef43568b0cb9628b574df69561c0558ca8035f8e181ae0751",
+      "sourceHash": "sha256:9f176ad0fa150944d6263099be782ba1911be5311f24113d24f2e477295923d1",
+      "width": 800,
+      "height": 1333,
+      "note": "竖版人物图（用户更换），比例 0.625"
     },
     {
       "path": "https://raw.githubusercontent.com/innng/innng/master/assets/kyubey.gif",
