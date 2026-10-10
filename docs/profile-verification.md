@@ -15,13 +15,31 @@
 - 减少动态效果的贡献回退图通过绿色像素检查。已修复通用图像转换器不支持原 SVG CSS、把回退图渲染成黑色方格的问题。
 - 所有仓库内素材的长度与 SHA-256 哈希均与来源记录一致。
 
+## 首次线上运行
+
+已推送到 `main`（`39d7911..1769fa0`），两个工作流按 `push` 触发：
+
+| 工作流 | 结果 | 说明 |
+|--------|------|------|
+| Generate contribution snake | ✅ 成功 | 6 个步骤全部通过，`output` 分支已生成明暗两套贡献动画 |
+| Generate profile metrics | ❌ 失败 | 第一步即失败，未产出统计图 |
+
+失败根因（Metrics v3.34.0 日志原文）：
+
+```text
+GitHub token format  │ fine-grained
+Error: It seems you're trying to use a fine-grained personal access token.
+These are currently unsupported as GitHub does not support them (yet?) for
+GraphQL API authentication. Use a classic token instead.
+```
+
+**修正此前的判断：** 我先前依据 GitHub 放开了 fine-grained 令牌认证 GraphQL，判断该组合「理论上可行、只是官方未背书」。实测证明这是错的——Metrics 自身按令牌格式主动拒绝，与 GitHub 侧是否支持无关，其 [issue #1292](https://github.com/lowlighter/metrics/issues/1292) 仍为 open。必须改用 classic 无 scope 令牌，工作流无需改动。
+
 ## 尚未验证
 
-仓库目前未配置 `METRICS_TOKEN`，本次也没有推送代码或触发 GitHub Actions。因此，双栏统计首次生成、线上定时运行、输出分支写入以及线上图表的实际尺寸尚未验证。离线预览中的统计区域明确标记为占位，不借用别人的数据。
+双栏统计尚未成功生成。需要在 `METRICS_TOKEN` 中换成 classic 令牌并重跑 `Generate profile metrics`；在此之前，线上主页的统计区域是缺失图片，离线预览中标注为占位。
 
-令牌类型存在一项未实测的兼容性风险：Metrics 官方文档只覆盖 classic 令牌，其 issue #1292 仍为 open。GitHub 后续放开了 fine-grained 令牌认证 GraphQL，因此 fine-grained 在理论上可用于只读公开数据的统计，但本机没有对应的可用令牌，无法离线验证。首次线上运行需要确认是否认证成功；失败时改用 classic 无 scope 令牌，无需修改工作流。
-
-设计检测器仍提示外部响应式贡献与统计图片缺少固定高度。统计图高度随真实数据变化；GitHub README 不支持通用响应式 CSS。本轮没有用猜测的高度拉伸图表，也不宣称检测器全绿。首次生成统计产物后需要检查实际尺寸及加载时布局偏移。
+统计图首次成功生成后，还需确认其实际渲染尺寸与加载时的布局偏移。设计检测器提示外部响应式图片缺少固定高度：统计图高度随真实数据变化，GitHub README 不支持通用响应式 CSS。本轮没有用猜测的高度拉伸图表，也不宣称检测器全绿。
 
 检测器的双换行和中点排版提示属于用户明确要求保留的参考样式，没有改成另一种设计。
 

@@ -4,26 +4,34 @@
 
 推送主页代码前确认接受当前预览。主页的打字标题与小狐狸 GIF 不需要访问令牌；贡献贪吃蛇和双栏统计需要在 GitHub Actions 首次生成产物后才能显示，不会自动借用别人的统计图。
 
-1. 打开 [个人访问令牌设置](https://github.com/settings/tokens)，创建用于公开数据读取的 Token。两种类型都可用：
+1. 打开 [个人访问令牌设置](https://github.com/settings/tokens)，创建 **classic** 令牌：
 
-   | 类型 | 配置 |
-   |------|------|
-   | **Fine-grained**（推荐，权限更小） | Resource owner 选自己的账号；Repository access 选 `Public repositories`；Permissions 留空 |
-   | **Classic** | 不勾选任何 scope |
+   1. 进入 `Tokens (classic)` 页面，选择 `Generate new token (classic)`。
+   2. 不勾选任何 scope。
+   3. 生成后复制令牌。
 
-2. 两种类型都不需要 `repo`、`public_repo`、`read:org` 或 `gist`。基础统计、语言分布和立体日历只读取公开资料，不访问私有仓库。
+2. 不需要 `repo`、`public_repo`、`read:org` 或 `gist`。基础统计、语言分布和立体日历只读取公开资料，不访问私有仓库。
 3. 建议设置过期时间（例如 90 天或 1 年）。到期后统计任务会因令牌失效而失败，需要重新创建并更新 Secret；选择不过期则需自行评估保管风险。
-4. 打开 [仓库 Actions Secret 设置](https://github.com/Fish-under-sea/Fish-under-sea/settings/secrets/actions)，添加名为 `METRICS_TOKEN` 的 Secret。
-5. 首次推送工作流后，在 [Actions](https://github.com/Fish-under-sea/Fish-under-sea/actions) 页面手动运行 `Generate contribution snake` 和 `Generate profile metrics`。
-6. 确认 `output` 分支中出现 `github-contribution-grid-snake.svg`、`github-contribution-grid-snake-dark.svg`、`metrics.left.svg` 和 `metrics.right.svg`。
+4. 打开 [仓库 Actions Secret 设置](https://github.com/Fish-under-sea/Fish-under-sea/settings/secrets/actions)，把 `METRICS_TOKEN` 更新为 classic 令牌的值。
+5. 在 [Actions](https://github.com/Fish-under-sea/Fish-under-sea/actions) 页面手动运行 `Generate profile metrics`（贡献动画已生成，无需重跑）。
+6. 确认 `output` 分支中出现 `metrics.left.svg` 和 `metrics.right.svg`。
 
 令牌只填入 GitHub 的 Secret 输入框，不发到聊天里，不保存到仓库文件。参考 [Metrics 官方配置文档](https://github.com/lowlighter/metrics/blob/master/.github/readme/partials/documentation/setup/action.md)。
 
-### 令牌类型的兼容性
+### 必须使用 classic 令牌
 
-`Metrics` 官方文档只覆盖 classic 令牌，其 [issue #1292](https://github.com/lowlighter/metrics/issues/1292)「支持新的 PAT 格式」目前仍为 open 状态。GitHub 后续放开了 [fine-grained 令牌认证 GraphQL](https://docs.github.com/en/graphql/guides/forming-calls-with-graphql)，因此 fine-grained 可以用于只读公开数据的统计。
+**已实测：fine-grained 令牌不可用。** 首次运行（Metrics v3.34.0）在第一步即失败，日志输出：
 
-这一组合属于官方未明确覆盖的路径：首次运行若报告认证失败或权限不足，改用 classic 无 scope 令牌即可，不需要修改工作流。只读取公开数据的令牌不会影响仓库写入，产物提交始终使用 GitHub 自动提供的 `GITHUB_TOKEN`。
+```text
+GitHub token format  │ fine-grained
+Error: It seems you're trying to use a fine-grained personal access token.
+These are currently unsupported as GitHub does not support them (yet?) for
+GraphQL API authentication. Use a classic token instead.
+```
+
+这与 [issue #1292](https://github.com/lowlighter/metrics/issues/1292) 仍为 open 一致：工具自身按令牌前缀识别格式并主动拒绝，与 GitHub 是否放开 GraphQL 认证无关。因此不要使用 fine-grained 令牌，也不必尝试为其追加权限。
+
+classic 令牌无 scope 即可满足当前配置。产物提交始终使用 GitHub 自动提供的 `GITHUB_TOKEN`，与读取令牌无关。
 
 ## 权限与数据范围
 
