@@ -14,6 +14,10 @@
   <img src="https://img.shields.io/badge/状态-持续折腾中-22d3ee?style=flat-square" alt="状态">
 </p>
 
+<p align="center">
+  <strong>简体中文</strong> · <a href="README.en.md">English</a>
+</p>
+
 ---
 
 ## 🙋 关于我
