@@ -73,7 +73,7 @@
 
 ## 📊 项目状态总览
 
-状态口径：**🟢 活跃**＝近 2 个月内有实质提交，**⏸️ 暂停维护**＝2–6 个月未提交，**🗄️ 已完成**＝超过 6 个月未提交（课程作业类，代码保留作参考）。下表的「最近提交」指**实质变更**日期，不含 README 等文档维护提交。
+状态口径：**🟢 活跃**＝近 2 个月内有实质提交，**⏸️ 暂停维护**＝2–6 个月未提交，**🗄️ 已完成 / 已归档**＝超过 6 个月未提交的课程作业，或已归档只读留档的仓库（代码与资料保留作参考）。下表的「最近提交」指**实质变更**日期，不含 README 等文档维护提交。
 
 | 项目 | 状态 | 语言 | 最近提交 | 说明 |
 |------|:----:|------|---------|------|
@@ -84,12 +84,12 @@
 | [WinTunerPro](https://github.com/Fish-under-sea/WinTunerPro) | ⏸️ 暂停维护 | TypeScript | 2026-06-24 | 功能已到 v0.2.2，等待实际用户反馈再排下一轮 |
 | [MnemoTranscode](https://github.com/Fish-under-sea/MnemoTranscode) | ⏸️ 暂停维护 | Python | 2026-05-21 | 技能节参赛作品，赛事结束后冻结迭代 |
 | [skill-festival-submissions](https://github.com/Fish-under-sea/skill-festival-submissions) | ⏸️ 暂停维护 | TypeScript | 2026-05-14 | 上游作品收集仓库的 fork，仅作留档 |
-| [25IFIEC](https://github.com/Fish-under-sea/25IFIEC) | ⏸️ 暂停维护 | — | 2026-04-30 | 班级信息仓库，名单更新后才动 |
 | [AgriSense](https://github.com/Fish-under-sea/AgriSense) | ⏸️ 暂停维护 | HTML | 2026-04-22 | 课程项目完成，等硬件条件具备再继续 |
 | [Cursor-IDE-zh-hans](https://github.com/Fish-under-sea/Cursor-IDE-zh-hans) | ⏸️ 暂停维护 | Python | 2026-04-14 | 等待上游 `vscode-loc` 词条更新后跟进 |
 | [cursor-ai-monitor](https://github.com/Fish-under-sea/cursor-ai-monitor) | ⏸️ 暂停维护 | TypeScript | 2026-04-13 | VS Code 扩展原型，验证完想法即告一段落 |
 | [live2d-widget](https://github.com/Fish-under-sea/live2d-widget) | ⏸️ 暂停维护 | JavaScript | 2026-04-13 | 上游 `stevenjoezhang/live2d-widget` 的副本，仅作留档，请以上游为准 |
 | [KouriChat](https://github.com/Fish-under-sea/KouriChat) | ⏸️ 暂停维护 | Python | 2026-03-25 | 改版完成后趋向稳定，`wxautox4` 上游大版本更新再跟 |
+| [25IFIEC](https://github.com/Fish-under-sea/25IFIEC) | 🗄️ 已归档 | — | 2026-04-30 | 班级信息仓库（16 个学生项目清单）；名单更新时才动，现已归档留档 |
 | [Campus-Text-Sentiment-Classification-System](https://github.com/Fish-under-sea/Campus-Text-Sentiment-Classification-System) | 🗄️ 已完成 | Python | 2025-12-24 | 课程期末作业（2025 年秋季学期），已结课；仓库已归档 |
 | [Movie-Review-Sentiment-Analysis-System](https://github.com/Fish-under-sea/Movie-Review-Sentiment-Analysis-System) | 🗄️ 已完成 | Python | 2025-12-24 | 课程期末作业（2025 年秋季学期），已结课；仓库已归档 |
 

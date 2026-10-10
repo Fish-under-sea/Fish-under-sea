@@ -73,7 +73,7 @@ Three things occupy most of my time:
 
 ## 📊 Project status overview
 
-Status convention: **🟢 Active** means substantive commits within the last 2 months, **⏸️ Paused** means 2–6 months without a commit, and **🗄️ Completed** means more than 6 months without a commit (coursework kept for reference). The "Last commit" column shows the date of the last **substantive change**, excluding documentation-only maintenance commits.
+Status convention: **🟢 Active** means substantive commits within the last 2 months, **⏸️ Paused** means 2–6 months without a commit, and **🗄️ Completed / Archived** means coursework untouched for more than 6 months or a repository archived as read-only for the record. The "Last commit" column shows the date of the last **substantive change**, excluding documentation-only maintenance commits.
 
 | Project | Status | Language | Last commit | Notes |
 |---------|:------:|----------|-------------|-------|
@@ -84,12 +84,12 @@ Status convention: **🟢 Active** means substantive commits within the last 2 m
 | [WinTunerPro](https://github.com/Fish-under-sea/WinTunerPro) | ⏸️ Paused | TypeScript | 2026-06-24 | Feature-complete at v0.2.2; next round waits on real user feedback |
 | [MnemoTranscode](https://github.com/Fish-under-sea/MnemoTranscode) | ⏸️ Paused | Python | 2026-05-21 | Skill-festival entry; iteration froze after the event |
 | [skill-festival-submissions](https://github.com/Fish-under-sea/skill-festival-submissions) | ⏸️ Paused | TypeScript | 2026-05-14 | Fork of an upstream submission repository, kept for the record |
-| [25IFIEC](https://github.com/Fish-under-sea/25IFIEC) | ⏸️ Paused | — | 2026-04-30 | Class information repository; updated only when the roster changes |
 | [AgriSense](https://github.com/Fish-under-sea/AgriSense) | ⏸️ Paused | HTML | 2026-04-22 | Course project finished; resumes when hardware is available |
 | [Cursor-IDE-zh-hans](https://github.com/Fish-under-sea/Cursor-IDE-zh-hans) | ⏸️ Paused | Python | 2026-04-14 | Waiting on upstream `vscode-loc` translation updates |
 | [cursor-ai-monitor](https://github.com/Fish-under-sea/cursor-ai-monitor) | ⏸️ Paused | TypeScript | 2026-04-13 | VS Code extension prototype; the idea was validated and parked |
 | [live2d-widget](https://github.com/Fish-under-sea/live2d-widget) | ⏸️ Paused | JavaScript | 2026-04-13 | A copy of upstream `stevenjoezhang/live2d-widget`, kept for the record — refer to upstream |
 | [KouriChat](https://github.com/Fish-under-sea/KouriChat) | ⏸️ Paused | Python | 2026-03-25 | Stable since the rework; will follow a major `wxautox4` upstream release |
+| [25IFIEC](https://github.com/Fish-under-sea/25IFIEC) | 🗄️ Archived | — | 2026-04-30 | Class information repository (16 student projects); updated only when the roster changes — now archived for the record |
 | [Campus-Text-Sentiment-Classification-System](https://github.com/Fish-under-sea/Campus-Text-Sentiment-Classification-System) | 🗄️ Completed | Python | 2025-12-24 | Course final project (autumn 2025), course finished; repository archived |
 | [Movie-Review-Sentiment-Analysis-System](https://github.com/Fish-under-sea/Movie-Review-Sentiment-Analysis-System) | 🗄️ Completed | Python | 2025-12-24 | Course final project (autumn 2025), course finished; repository archived |
 
