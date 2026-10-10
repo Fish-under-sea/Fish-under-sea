@@ -1,36 +1,60 @@
 <div align="center">
 
-<img src="./assets/banner.jpg" alt="Fish-under-sea · 独立开发者 · AI Agent / 桌面工具 / DSH 插件生态" width="100%">
+<img src="./assets/profile.jpg" width="320" height="200" align="right" alt="Fish-under-sea 的个人主页配图" />
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./assets/title-compact-static.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/title-static.svg" />
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Inconsolata&amp;weight=500&amp;size=52&amp;duration=4000&amp;pause=1200&amp;color=CBC689&amp;center=true&amp;vCenter=true&amp;multiline=true&amp;repeat=true&amp;random=false&amp;width=680&amp;height=180&amp;lines=Hello+hello;Fish-under-sea" />
+  <source media="(max-width: 600px)" srcset="https://readme-typing-svg.demolab.com?font=Inconsolata&amp;weight=500&amp;size=52&amp;duration=4000&amp;pause=1200&amp;color=747333&amp;center=true&amp;vCenter=true&amp;multiline=true&amp;repeat=true&amp;random=false&amp;width=680&amp;height=180&amp;lines=Hello+hello;Fish-under-sea" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Inconsolata&amp;weight=500&amp;size=50&amp;duration=4000&amp;pause=1200&amp;color=CBC689&amp;center=true&amp;vCenter=true&amp;multiline=true&amp;repeat=true&amp;random=false&amp;width=1300&amp;height=140&amp;lines=Hello+hello;I%27m+Fish-under-sea%2C+a+personal+developer" />
+  <img src="https://readme-typing-svg.demolab.com?font=Inconsolata&amp;weight=500&amp;size=50&amp;duration=4000&amp;pause=1200&amp;color=747333&amp;center=true&amp;vCenter=true&amp;multiline=true&amp;repeat=true&amp;random=false&amp;width=1300&amp;height=140&amp;lines=Hello+hello;I%27m+Fish-under-sea%2C+a+personal+developer" width="65%" alt="Hello hello. I'm Fish-under-sea, a personal developer." />
+</picture>
+<br><br>
+<pre>
+💼 个人开发者 · AI Agent
+💻 Python · TypeScript · JS
+📖 桌面工具 · DSH 插件
+🛠 自动化 · 开源项目
+✨ 把想法做成真正能用的工具
+</pre>
+<br>
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/kyubey-still.png" />
+  <img src="https://raw.githubusercontent.com/innng/innng/master/assets/kyubey.gif" width="78" height="40" alt="原案例中奔跑的小狐狸动图" />
+</picture>
+<br><br>
+<a href="https://github.com/Fish-under-sea?tab=repositories"><img src="https://img.shields.io/badge/Projects-Fish--under--sea-e861a1?style=flat" width="154" height="20" alt="查看我的项目" /></a>
+<a href="mailto:1661715118@qq.com"><img src="https://img.shields.io/badge/Email-1661715118%40qq.com-6f8d9f?style=flat" width="177" height="20" alt="通过邮箱联系我" /></a>
 
 </div>
 
-<p align="center">
-  <em>把「AI 能替我做什么」变成「我已经做出来了什么」。</em>
-</p>
+<br clear="both">
 
-<p align="center">
-  <a href="https://github.com/Fish-under-sea?tab=repositories"><img src="https://img.shields.io/badge/仓库-全部项目-0a1128?style=flat-square" alt="全部项目"></a>
-  <a href="mailto:1661715118@qq.com"><img src="https://img.shields.io/badge/邮箱-1661715118@qq.com-0d3b6e?style=flat-square" alt="邮箱"></a>
-  <img src="https://img.shields.io/badge/状态-持续折腾中-22d3ee?style=flat-square" alt="状态">
-</p>
+**Fish-under-sea · 个人开发者**
 
-<p align="center">
-  <strong>简体中文</strong> · <a href="README.en.md">English</a>
-</p>
+*把「AI 能替我做什么」变成「我已经做出来了什么」。*
 
----
+专注 **AI Agent、桌面工具与 DSH 插件**。用真实需求驱动开发，把复杂流程做成日常能用的工具。
 
-## 🙋 关于我
+正在构建 [DSH 插件生态](https://github.com/Fish-under-sea/dsh-fish)，也做了 [WinTunerPro](https://github.com/Fish-under-sea/WinTunerPro) 和 [MnemoTranscode](https://github.com/Fish-under-sea/MnemoTranscode)。
 
-深圳城市职业学院 25 级「智能·创造者创新实验班」在读。习惯用项目驱动学习：先立一个真实需求，再把技术栈一层层补上。
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/contributions-still.png" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Fish-under-sea/Fish-under-sea/output/github-contribution-grid-snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/Fish-under-sea/Fish-under-sea/output/github-contribution-grid-snake.svg" width="100%" alt="Fish-under-sea 的 GitHub 贡献贪吃蛇动画" />
+</picture>
 
-目前主要在做三件事：
+<table align="center" width="100%">
+  <tr>
+    <td width="50%" valign="top" align="center"><img src="https://raw.githubusercontent.com/Fish-under-sea/Fish-under-sea/output/metrics.left.svg" width="100%" alt="Fish-under-sea 的 GitHub 活动与仓库统计" /></td>
+    <td width="50%" valign="top" align="center"><img src="https://raw.githubusercontent.com/Fish-under-sea/Fish-under-sea/output/metrics.right.svg" width="100%" alt="Fish-under-sea 的常用语言与立体贡献日历" /></td>
+  </tr>
+</table>
 
-- **AI Agent** —— 把大模型接进真实工作流，而不是停在对话框里（记忆转码、对话式助手、情感分析这类「AI 要落地」的题目）。
-- **桌面工具** —— 面向不懂命令行的普通用户，把复杂流程收进一个可视化应用。
-- **DSH 插件生态** —— 给自己每天用的工具写插件，攒成一套可复用、可分发的插件集合。
+<p align="center"><strong>简体中文</strong> · <a href="README.en.md">English</a></p>
 
-## 🧰 技术栈
+<details>
+<summary><strong>技术栈</strong></summary>
 
 <table>
 <tr><td><b>语言</b></td><td>
@@ -59,6 +83,11 @@
 
 </td></tr>
 </table>
+
+</details>
+
+<details>
+<summary><strong>完整项目索引与状态</strong></summary>
 
 ## ⭐ 精选项目
 
@@ -99,10 +128,12 @@
 >
 > 全部仓库（含上表未列的私有仓库）均可通过 [仓库列表](https://github.com/Fish-under-sea?tab=repositories) 查看。
 
-## 📮 联系我
+</details>
+
+## 联系我
 
 - **邮箱**：1661715118@qq.com
 - **Issue**：任何仓库都欢迎直接开 Issue，我会看（暂停维护的项目也看，只是不一定改）。
 - **PR**：欢迎，尤其欢迎 DSH 插件与桌面工具方向的补丁。
 
-<sub>本主页 Banner 为仓库内自托管图片（`assets/banner.jpg`），不依赖外部图床，明暗两种主题下均可读。徽章使用 shields.io 静态徽章；若徽章未加载，页面内容与链接不受影响。</sub>
+<sub>版式参考 <a href="https://github.com/innng/innng">innng</a>；统计由 <a href="https://github.com/lowlighter/metrics">Metrics</a> 生成。<a href="assets/manifest.json">素材来源</a> · <a href="docs/profile-setup.md">生成配置</a></sub>

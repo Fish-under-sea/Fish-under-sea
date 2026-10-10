@@ -1,36 +1,60 @@
 <div align="center">
 
-<img src="./assets/banner.jpg" alt="Fish-under-sea · Independent Developer · AI Agents / Desktop Tools / DSH Plugin Ecosystem" width="100%">
+<img src="./assets/profile.jpg" width="320" height="200" align="right" alt="Fish-under-sea's profile artwork" />
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./assets/title-compact-static.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/title-static.svg" />
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Inconsolata&amp;weight=500&amp;size=52&amp;duration=4000&amp;pause=1200&amp;color=CBC689&amp;center=true&amp;vCenter=true&amp;multiline=true&amp;repeat=true&amp;random=false&amp;width=680&amp;height=180&amp;lines=Hello+hello;Fish-under-sea" />
+  <source media="(max-width: 600px)" srcset="https://readme-typing-svg.demolab.com?font=Inconsolata&amp;weight=500&amp;size=52&amp;duration=4000&amp;pause=1200&amp;color=747333&amp;center=true&amp;vCenter=true&amp;multiline=true&amp;repeat=true&amp;random=false&amp;width=680&amp;height=180&amp;lines=Hello+hello;Fish-under-sea" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Inconsolata&amp;weight=500&amp;size=50&amp;duration=4000&amp;pause=1200&amp;color=CBC689&amp;center=true&amp;vCenter=true&amp;multiline=true&amp;repeat=true&amp;random=false&amp;width=1300&amp;height=140&amp;lines=Hello+hello;I%27m+Fish-under-sea%2C+a+personal+developer" />
+  <img src="https://readme-typing-svg.demolab.com?font=Inconsolata&amp;weight=500&amp;size=50&amp;duration=4000&amp;pause=1200&amp;color=747333&amp;center=true&amp;vCenter=true&amp;multiline=true&amp;repeat=true&amp;random=false&amp;width=1300&amp;height=140&amp;lines=Hello+hello;I%27m+Fish-under-sea%2C+a+personal+developer" width="65%" alt="Hello hello. I'm Fish-under-sea, a personal developer." />
+</picture>
+<br><br>
+<pre>
+💼 Personal developer · AI agents
+💻 Python · TypeScript · JS
+📖 Desktop tools · DSH plugins
+🛠 Automation · Open source
+✨ Turning ideas into useful tools
+</pre>
+<br>
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/kyubey-still.png" />
+  <img src="https://raw.githubusercontent.com/innng/innng/master/assets/kyubey.gif" width="78" height="40" alt="The running fox animation from the original profile" />
+</picture>
+<br><br>
+<a href="https://github.com/Fish-under-sea?tab=repositories"><img src="https://img.shields.io/badge/Projects-Fish--under--sea-e861a1?style=flat" width="154" height="20" alt="My projects" /></a>
+<a href="mailto:1661715118@qq.com"><img src="https://img.shields.io/badge/Email-1661715118%40qq.com-6f8d9f?style=flat" width="177" height="20" alt="Get in touch by email" /></a>
 
 </div>
 
-<p align="center">
-  <em>Turning "what could AI do for me" into "what I have already built."</em>
-</p>
+<br clear="both">
 
-<p align="center">
-  <a href="https://github.com/Fish-under-sea?tab=repositories"><img src="https://img.shields.io/badge/repos-all%20projects-0a1128?style=flat-square" alt="All projects"></a>
-  <a href="mailto:1661715118@qq.com"><img src="https://img.shields.io/badge/email-1661715118@qq.com-0d3b6e?style=flat-square" alt="Email"></a>
-  <img src="https://img.shields.io/badge/status-still%20tinkering-22d3ee?style=flat-square" alt="Status">
-</p>
+**Fish-under-sea · Personal developer**
 
-<p align="center">
-  <a href="README.md">简体中文</a> · <strong>English</strong>
-</p>
+*Turning "what could AI do for me" into "what I have already built."*
 
----
+I build **AI agents, desktop tools, and DSH plugins**, turning real needs and complicated workflows into tools I can use every day.
 
-## 🙋 About me
+Building the [DSH plugin ecosystem](https://github.com/Fish-under-sea/dsh-fish), [WinTunerPro](https://github.com/Fish-under-sea/WinTunerPro), and [MnemoTranscode](https://github.com/Fish-under-sea/MnemoTranscode).
 
-A student in the 2025 "Intelligent Founders Innovation Experimental Class" at Shenzhen City Polytechnic. I learn by building: start from a real need, then fill in the tech stack layer by layer.
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/contributions-still.png" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Fish-under-sea/Fish-under-sea/output/github-contribution-grid-snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/Fish-under-sea/Fish-under-sea/output/github-contribution-grid-snake.svg" width="100%" alt="Fish-under-sea's GitHub contribution snake animation" />
+</picture>
 
-Three things occupy most of my time:
+<table align="center" width="100%">
+  <tr>
+    <td width="50%" valign="top" align="center"><img src="https://raw.githubusercontent.com/Fish-under-sea/Fish-under-sea/output/metrics.left.svg" width="100%" alt="Fish-under-sea's GitHub activity and repository metrics" /></td>
+    <td width="50%" valign="top" align="center"><img src="https://raw.githubusercontent.com/Fish-under-sea/Fish-under-sea/output/metrics.right.svg" width="100%" alt="Fish-under-sea's language statistics and isometric contribution calendar" /></td>
+  </tr>
+</table>
 
-- **AI agents** — wiring large models into real workflows instead of leaving them in a chat box (memory transcoding, conversational assistants, sentiment analysis — the kind of problem where "AI has to actually land").
-- **Desktop tools** — for people who don't live in a terminal: fold a complicated process into one visual application.
-- **The DSH plugin ecosystem** — writing plugins for the tools I use every day, until they add up to a reusable, distributable set.
+<p align="center"><a href="README.md">简体中文</a> · <strong>English</strong></p>
 
-## 🧰 Tech stack
+<details>
+<summary><strong>Tech stack</strong></summary>
 
 <table>
 <tr><td><b>Languages</b></td><td>
@@ -59,6 +83,11 @@ Three things occupy most of my time:
 
 </td></tr>
 </table>
+
+</details>
+
+<details>
+<summary><strong>All projects and their status</strong></summary>
 
 ## ⭐ Featured projects
 
@@ -99,10 +128,12 @@ Status convention: **🟢 Active** means substantive commits within the last 2 m
 >
 > Every repository (including private ones not listed above) is visible in the [repository list](https://github.com/Fish-under-sea?tab=repositories).
 
-## 📮 Get in touch
+</details>
+
+## Get in touch
 
 - **Email**: 1661715118@qq.com
 - **Issues**: Open an issue on any repository — I read them all (including paused projects, though I may not act on them).
 - **Pull requests**: Welcome, especially patches for DSH plugins and desktop tools.
 
-<sub>The banner on this page is a self-hosted image inside the repository (`assets/banner.jpg`) and depends on no external image host, so it stays readable in both light and dark themes. Badges use static shields.io images; if a badge fails to load, the page content and links are unaffected.</sub>
+<sub>Layout inspired by <a href="https://github.com/innng/innng">innng</a>; statistics generated with <a href="https://github.com/lowlighter/metrics">Metrics</a>. <a href="assets/manifest.json">Asset sources</a> · <a href="docs/profile-setup.md">Generation setup</a></sub>
