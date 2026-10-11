@@ -94,6 +94,30 @@ test('首屏人物图与标题并排且不重叠', () => {
   }
 });
 
+test('首屏徽章墙使用用户真实技术栈且放在小狐狸区块之后', () => {
+  // 用户实际使用的技术（来自技术栈表格）→ skillicons 图标 ID
+  // 不含参考图里的 Rust/Axum/STM32/Qt/PyTorch/WebGL/OpenCV 等非本人技术
+  const stack = { Python: 'py', TypeScript: 'ts', JavaScript: 'js', 'C++': 'cpp', React: 'react', Vite: 'vite', Electron: 'electron', FastAPI: 'fastapi', Flask: 'flask', TensorFlow: 'tensorflow' };
+  for (const profile of profiles) {
+    const content = read(profile);
+    // 技术栈徽章区应在小狐狸之后、header 结束之前
+    const foxIndex = content.indexOf('kyubey.gif');
+    const stackIndex = content.indexOf('skillicons.dev/icons?i=');
+    assert.ok(stackIndex > foxIndex, '技术栈徽章墙应位于小狐狸之后');
+    assert.ok(stackIndex < content.indexOf('</div>'), '技术栈徽章墙应在首屏容器内');
+
+    const stackParam = content.slice(stackIndex).match(/icons\?i=([a-z0-9,]+)/);
+    assert.ok(stackParam, '缺少 skillicons 图标参数');
+    const used = stackParam[1].split(',');
+    for (const [name, id] of Object.entries(stack)) {
+      assert.ok(used.includes(id), `技术栈徽章缺少 ${name}（图标 ID：${id}）`);
+    }
+    for (const notMine of ['rust', 'axum', 'stm32', 'qt', 'pytorch', 'webgl', 'opencv']) {
+      assert.ok(!used.includes(notMine), `不应包含非本人技术栈的 ${notMine}`);
+    }
+  }
+});
+
 test('人物图和动画静态回退素材存在且没有伪造文件格式', () => {
   assert.ok(existsSync(join(root, 'assets/profile.jpg')), '缺少人物图');
   const jpeg = readFileSync(join(root, 'assets/profile.jpg'));

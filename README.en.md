@@ -25,6 +25,8 @@
 <br><br>
 <a href="https://github.com/Fish-under-sea?tab=repositories"><img src="https://img.shields.io/badge/Projects-Fish--under--sea-e861a1?style=flat" width="154" height="20" alt="My projects" /></a>
 <a href="mailto:1661715118@qq.com"><img src="https://img.shields.io/badge/Email-1661715118%40qq.com-6f8d9f?style=flat" width="177" height="20" alt="Get in touch by email" /></a>
+<br><br>
+<a href="https://github.com/Fish-under-sea?tab=repositories"><img src="https://skillicons.dev/icons?i=py,ts,js,cpp,react,vite,electron,tailwind,flutter,fastapi,flask,tensorflow,postgres,docker,git,pnpm,vitest,nodehtml" width="100%" alt="My stack: Python, TypeScript, JavaScript, C++, React, Vite, Electron, Tailwind CSS, Flutter, FastAPI, Flask, TensorFlow, PostgreSQL, Docker, Git, pnpm, Vitest, HTML5" /></a>
 
 </div>
 
