@@ -38,7 +38,7 @@
 
 专注 **AI Agent、桌面工具与 DSH 插件**。用真实需求驱动开发，把复杂流程做成日常能用的工具。
 
-正在构建 [DSH 插件生态](https://github.com/Fish-under-sea/dsh-fish)，也做了 [WinTunerPro](https://github.com/Fish-under-sea/WinTunerPro) 和 [MnemoTranscode](https://github.com/Fish-under-sea/MnemoTranscode)。
+正在构建 [Windows AI 桌面宿主](https://github.com/Fish-under-sea/FISH-Dock)，也做了 [WinTunerPro](https://github.com/Fish-under-sea/WinTunerPro) 和 [MnemoTranscode](https://github.com/Fish-under-sea/MnemoTranscode)。
 
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/contributions-still.png" />
